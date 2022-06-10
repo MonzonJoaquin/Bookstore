@@ -1,3 +1,6 @@
 export function Footer() {
-    return <footer>Footer</footer>
+    return <footer>
+        <div>Datos</div>
+        <div>Contacto</div>
+    </footer>
 }

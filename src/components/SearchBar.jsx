@@ -1,9 +1,7 @@
-export function SearchBar({id, label, options}){
+export function SearchBar({id, search, content, update, reset=null}){
     return <div>
-        <label htmlFor={id}>{label}</label>
-        <input name={id} id={id} list={id}/>
-        <datalist id={id}>
-            {options?.map(e => <option value={e}/>)}
-        </datalist>
+        <input name={id} list={id} type='text' onChange={(e)=>update(e.target.value)}/>
+        <button onClick={() => search()}>{content}</button>
+        {reset?<button onClick={() => reset()}>Reset</button>:null}
     </div>
 }

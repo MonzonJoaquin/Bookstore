@@ -1,0 +1,49 @@
+.Store {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.Header {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.Main {
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+
+.Main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.Aside {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.Section {
+    grid-area: 1 / 2 / 2 / 5;
+}
+
+.ShoppingCart {
+    grid-area: 1 / 5 / 3 / 6;
+    margin: 10px auto;
+}
+
+.Paginated {
+    grid-area: 2 / 2 / 3 / 5;
+}
+
+.Order {
+    grid-area: 1 / 2 / 3 / 5;
+}
+
+
+
+

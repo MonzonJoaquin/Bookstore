@@ -1,0 +1,41 @@
+.Products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.Products div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 10px;
+}
+
+
+.Products div h3 {
+    margin: 0;
+}
+
+.Products div img {
+    position: relative;
+    width: 100%;
+}
+
+.Paginated {
+    margin: auto;
+}
+
+.Paginated ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.Paginated ul li {
+    list-style: none;
+    display: inline;
+}
